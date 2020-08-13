@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipped Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- use jquery link always in head -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form form-login">
+            <h2>Login Form</h2>
+            <div class="input-container">
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" placeholder="Username" class="input">
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" class="input">
+                </div>
+                <button type="submit" class="submit">SIGN IN</button>
+                <button type="submit" class="submit i">SIGN UP</button>
+                <br>
+                <br>
+                <br>
+                <p>Login With Social Media</p>
+                <div class="social-btn">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-google"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="form  form-signup">
+            <h2>Sign Up Form</h2>
+            <div class="input-container">
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username" placeholder="Choose Username" class="input">
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" placeholder="Choose Password" class="input">
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="password" placeholder="Confirm Password" class="input">
+                </div>
+                <button type="submit" class="submit">SIGN UP</button>
+                <button type="submit i" class="submit i">SIGN IN</button>
+                <br>
+                <br>
+                <p>Sign Up With Social Media</p>
+                <div class="social-btn">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-google"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".submit.i").click(function() {
+                $(".form").removeClass("hide");
+                $(this).parent().parent().addClass("hide");
+            });
+        });
+    </script>
+</body>
+
+</html>
